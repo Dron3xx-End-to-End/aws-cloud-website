@@ -83,7 +83,7 @@ The same naming convention must be used for every new project.
 
 ## Description
 
-The project description must be taken from the project's `README.md`.
+The project description must be taken from the project's `portfolio-update.md`.
 
 The description must have separate Polish and English translations.
 
