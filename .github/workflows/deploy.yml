@@ -1,7 +1,9 @@
 on:
   push:
-    branches:
-      - main
+    paths:
+      - "*.html"
+      - "css/**"
+      - "js/**"
 
 env:
   AWS_REGION: eu-central-1
@@ -13,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@v7.0.0
 
       #HTML/CSS validation
       - name: Validate HTML
@@ -34,14 +36,14 @@ jobs:
           css: true
 
       - name: Validate JS
-        uses: biomejs/setup-biome@v2
+        uses: biomejs/setup-biome@v2.7.1
       - run: |
           biome check ./js
 
 
       #Python validation
       - name: Install python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.x'
 
@@ -63,10 +65,10 @@ jobs:
     needs: Validate
     steps:
       - name: Checkout
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@v7.0.0
 
       - name: Install python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.x'
 
@@ -80,7 +82,7 @@ jobs:
           python scripts/update_last_update.py
 
       - name: Create Artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: website-html-css-js
           path: |
@@ -98,13 +100,13 @@ jobs:
 
     steps:      
       - name: Download Artifact
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8.0.1
         with:
           name: website-html-css-js
           path: website
 
       - name: Configure AWS OIDC
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6.3.0
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ env.AWS_REGION }}
