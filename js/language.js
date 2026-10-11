@@ -39,6 +39,8 @@ const translations = {
 		AnsibleProjectDescription:
 			"Konfiguracja i automatyzacja instancji AWS EC2 przy użyciu Ansible.",
 
+		// AUTO-GENERATED PROJECT TRANSLATIONS
+
 		StatusFinished: "Status: Zakończony",
 		StatusInProgress: "Status: W trakcie",
 		StatusCompleted: "Status: Ukończony",
@@ -83,6 +85,8 @@ const translations = {
 
 		AnsibleProjectDescription:
 			"Configuration and automation of AWS EC2 instances using Ansible.",
+
+		// AUTO-GENERATED PROJECT TRANSLATIONS
 
 		StatusInProgress: "Status: In progress",
 		StatusCompleted: "Status: Completed",
