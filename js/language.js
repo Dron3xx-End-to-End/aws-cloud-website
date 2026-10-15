@@ -22,11 +22,10 @@ const translations = {
 		ViewCredly: "Zobacz na Credly",
 
 		Projects: "Projekty",
+		TechnologiesUsed: "Wykorzystane technologie:",
 
 		AWSPortfolioWebsite: "Strona portfolio AWS",
 		AWSPortfolioDescription: "Statyczna strona portfolio AWS wdrożona na S3.",
-
-		TechnologiesUsed: "Wykorzystane technologie:",
 
 		WindowsVoiceAssistant: "Asystent głosowy dla systemu Windows",
 
@@ -70,11 +69,10 @@ const translations = {
 		ViewCredly: "View on Credly",
 
 		Projects: "Projects",
+		TechnologiesUsed: "Technologies used:",
 
 		AWSPortfolioWebsite: "AWS Portfolio Website",
 		AWSPortfolioDescription: "Static AWS portfolio website deployed on S3.",
-
-		TechnologiesUsed: "Technologies used:",
 
 		WindowsVoiceAssistant: "Windows Voice Assistant",
 
