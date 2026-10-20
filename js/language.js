@@ -1,7 +1,9 @@
+
 const pl = document.getElementById("pl");
 const eng = document.getElementById("eng");
 
 const translations = {
+	// START PL TRANSLATIONS
 	pl: {
 		Welcome: "Witaj w moim portfolio",
 		ViewGitHub: "Zobacz mój GitHub",
@@ -40,6 +42,10 @@ const translations = {
 
 		// AUTO-GENERATED PL TRANSLATIONS
 
+		PortfolioAutomation: "Automatyzacja Portfolio",
+		PortfolioAutomationDescription:
+			"Automatyzuje aktualizacje projektów portfolio za pomocą GitHub Actions.",
+
 		StatusFinished: "Status: Zakończony",
 		StatusInProgress: "Status: W trakcie",
 		StatusCompleted: "Status: Ukończony",
@@ -48,7 +54,9 @@ const translations = {
 		Copyright: "© 2026 Dawid Bronikowski. Wszelkie prawa zastrzeżone.",
 		LastUpdated: "Ostatnia aktualizacja:",
 	},
+	// END PL TRANSLATIONS
 
+	// START ENG TRANSLATIONS
 	eng: {
 		Welcome: "Welcome to My Portfolio",
 		ViewGitHub: "View my GitHub",
@@ -86,6 +94,10 @@ const translations = {
 
 		// AUTO-GENERATED ENG TRANSLATIONS
 
+		PortfolioAutomation: "Portfolio Automation",
+		PortfolioAutomationDescription:
+			"Automates portfolio project updates with GitHub Actions.",
+
 		StatusInProgress: "Status: In progress",
 		StatusCompleted: "Status: Completed",
 
@@ -93,6 +105,7 @@ const translations = {
 		Copyright: "© 2026 Dawid Bronikowski. All rights reserved.",
 		LastUpdated: "Last updated:",
 	},
+	// END ENG TRANSLATIONS
 };
 
 function changeLanguage(language) {
