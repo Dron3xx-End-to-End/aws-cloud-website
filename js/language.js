@@ -40,8 +40,8 @@ const translations = {
 
 		// AUTO-GENERATED PL TRANSLATIONS
 
-		PortfolioAutomation: "Automatyzacja Portfolio",
-		PortfolioAutomationDescription: "Automatyzuje aktualizacje projektów portfolio za pomocą GitHub Actions.",
+		PortfolioAutomation: "Portfolio Automation",
+		PortfolioAutomationDescription: "Automates portfolio project updates with GitHub Actions.",
 
 
 		StatusFinished: "Status: Zakończony",
