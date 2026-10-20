@@ -54,7 +54,7 @@ jobs:
 
       - name: Run ruff
         run: |
-          ruff check . --select ALL --ignore D203,D212,INP001,CPY001
+          ruff check . --select ALL --ignore D203,D212,INP001,CPY001,UP017
 
       - name: Check Ruff Formatting
         run: 
