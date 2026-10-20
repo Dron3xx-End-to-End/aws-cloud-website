@@ -40,6 +40,10 @@ const translations = {
 
 		// AUTO-GENERATED PL TRANSLATIONS
 
+		PortfolioAutomation: "Automatyzacja Portfolio",
+		PortfolioAutomationDescription: "Automatyzuje aktualizacje projektów portfolio za pomocą GitHub Actions.",
+
+
 		StatusFinished: "Status: Zakończony",
 		StatusInProgress: "Status: W trakcie",
 		StatusCompleted: "Status: Ukończony",
@@ -85,6 +89,10 @@ const translations = {
 			"Configuration and automation of AWS EC2 instances using Ansible.",
 
 		// AUTO-GENERATED ENG TRANSLATIONS
+
+		PortfolioAutomation: "Portfolio Automation",
+		PortfolioAutomationDescription: "Automates portfolio project updates with GitHub Actions.",
+
 
 		StatusInProgress: "Status: In progress",
 		StatusCompleted: "Status: Completed",
