@@ -94,6 +94,10 @@ const translations = {
 
 		// AUTO-GENERATED ENG TRANSLATIONS
 
+		PortfolioAutomation: "Portfolio Automation",
+		PortfolioAutomationDescription:
+			"Automates portfolio project updates with GitHub Actions.",
+
 		StatusInProgress: "Status: In progress",
 		StatusCompleted: "Status: Completed",
 
