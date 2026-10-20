@@ -1,4 +1,3 @@
-
 const pl = document.getElementById("pl");
 const eng = document.getElementById("eng");
 
