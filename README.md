@@ -1,122 +1,102 @@
-# Cloud & DevOps Portfolio
-```text
-                 Visitor
-                    │
-                    ▼
-             AWS S3 / Hosting
-                    │
-                    ▼
-          Cloud & DevOps Portfolio
-             │       │       │
-             ▼       ▼       ▼
-           HTML     CSS      JS
-                    │
-                    ▼
-             GitHub Repository
-                    │
-             ┌──────┴──────┐
-             ▼             ▼
-      Validation       Maintenance
-      Ruff + Biome     Python + BS4
-```
+# AWS Cloud & DevOps Portfolio
 
-A personal portfolio website for Dawid Bronikowski, built as a modern cloud and DevOps-focused landing page. The project showcases skills, certifications, and professional growth across AWS, Azure, and Google Cloud Platform, while demonstrating a strong interest in automation, infrastructure as code, and CI/CD.
+A lightweight, static portfolio website presenting Dawid Bronikowski's Cloud & DevOps skills, certifications, and projects. The portfolio is focused on **AWS, infrastructure as code, automation, and CI/CD**.
+
+**Live website:** https://d3kblsgq3c7ax1.cloudfront.net  
+**Source repository:** https://github.com/Dron3xx-End-to-End/aws-cloud-website
 
 ## Overview
 
-This project is a front-end portfolio designed to present a cloud engineering profile with a long-term multi-cloud focus. While AWS is currently a major part of the site, the project is intended to evolve over time to reflect broader learning and hands-on experience in Azure and Google Cloud Platform.
+The site is built with HTML, CSS, and vanilla JavaScript. It is hosted as static content on AWS S3 and delivered through Amazon CloudFront. The page includes Polish and English translations and project cards linking to their source repositories.
 
-The site is built with plain HTML and CSS, making it lightweight, fast, and easy to host on static cloud infrastructure.
+The repository also contains maintenance utilities and participates in a GitHub Actions workflow that validates code and updates the portfolio content.
 
 ## Features
 
-- Responsive single-page portfolio layout
-- About section explaining the cloud and DevOps journey
-- Skills section covering AWS, Azure, Google Cloud, DevOps, programming, and operating systems
-- Projects area highlighting cloud-focused work and portfolio pieces
-- Contact section with email link
-- Static site design suitable for hosting on cloud providers such as AWS S3, Azure Static Web Apps, or Google Cloud storage
-- Local utilities for validation and site maintenance
+- Static portfolio website with a responsive layout
+- Polish and English interface translations
+- Sections for professional introduction, skills, certifications, projects, and contact information
+- Project cards showing descriptions, technologies, status, and repository links
+- AWS S3 hosting with CloudFront delivery
+- GitHub Actions workflows for validation and automated portfolio maintenance
+- Python utility for updating the page's last-updated date
+- Ruff and Biome checks for code quality
 
-## Tech Stack
+## Technology Stack
 
-- HTML5
-- CSS3
-- Python 3
-- BeautifulSoup 4
-- Ruff (linting and formatting checks)
-- Multi-cloud learning and portfolio focus:
-  - AWS
-  - Azure
-  - Google Cloud Platform
+- **Cloud:** AWS S3, Amazon CloudFront
+- **Automation / CI:** GitHub Actions
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Maintenance:** Python 3, Beautiful Soup 4
+- **Quality checks:** Ruff, Biome
 
-## Project Structure
+## Repository Structure
 
-- `index.html` – main portfolio page
-- `css/styles.css` – styling and layout
-- `images/` – image assets
-- `scripts/check.bat` – Windows validation script for linting and formatting
-- `scripts/update_last_update.py` – updates the footer date in the HTML
-- `explained.md` – detailed explanation of the website structure and supporting tools
-- `README.md` – project documentation
-- `LICENSE` – project license information
+```text
+aws-cloud-website/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   ├── language.js
+│   └── projectscroll.js
+├── images/
+├── scripts/
+│   ├── check.bat
+│   └── update_last_update.py
+├── explained.md
+├── README.md
+└── LICENSE
+```
 
 ## Local Development
 
-To view the site locally:
-
-1. Clone the repository.
-2. Open `index.html` directly in a browser, or serve the project with a local web server.
-3. From the project root, run:
+Clone the repository and open `index.html` in a browser, or start a local static server from the repository root:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000` in your browser.
+Then open <http://localhost:8000>.
 
-## Validation Script
+## Validation
 
-A helper script is included for local quality checks:
+On Windows, run the repository's validation helper from the project root:
 
 ```bat
 scripts\check.bat
 ```
 
-This script runs Ruff linting and formatting checks and pauses at the end so the result can be reviewed.
+The repository also uses Biome for JavaScript formatting and checks. When running Biome manually, use the project's configured package and run it from the website repository root, for example:
+
+```bash
+npx @biomejs/biome format --write ./js
+npx @biomejs/biome check ./js
+```
 
 ## Updating the Footer Date
 
-The footer date can be refreshed with:
+Run the following command from the repository root:
 
 ```bash
 python scripts/update_last_update.py
 ```
 
-This script updates the `lastupdate-time` field in the page using BeautifulSoup.
+The script updates the footer's last-updated date in `index.html`.
 
 ## Deployment
 
-This site is designed as a static website and is suitable for deployment on cloud hosting platforms. While AWS is the current foundation, the project is planned to grow alongside Azure and Google Cloud workflows.
+The website is hosted on AWS S3 and delivered through Amazon CloudFront. GitHub Actions is used for repository validation and automated maintenance. Deployment settings and AWS resource configuration are managed separately from the static website source.
 
-Typical deployment options include:
+## Project Direction
 
-1. AWS S3 static website hosting
-2. Azure Static Web Apps
-3. Google Cloud storage hosting
-4. Optional CDN or custom domain integration
+This portfolio is focused on **AWS and Cloud/DevOps engineering**. The current learning and project direction prioritizes AWS, Terraform, Ansible, Python, Bash, and GitHub Actions. Azure and Google Cloud Platform are not part of the current roadmap.
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
 ## Contact
 
-For inquiries or collaboration:
-
 - Email: dawid.bronikowski@outlook.com
-- GitHub: https://github.com/Dron3xx
-
-## Notes
-
-This repository is a personal portfolio and learning project focused on cloud engineering, automation, and DevOps. It currently highlights AWS while intentionally leaving room to expand into Azure and Google Cloud over time as the profile and experience grow.
+- GitHub: https://github.com/Dron3xx-End-to-End
