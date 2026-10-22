@@ -32,7 +32,7 @@ const translations = {
 
 		TerraformProject: "Projekt Terraform",
 		TerraformProjectDescription:
-			"Infrastruktura AWS utworzona przy użyciu Terraform.",
+			"Infrastruktura AWS zarządzana przez Terraform.",
 
 		AnsibleProject: "Projekt Ansible",
 
@@ -84,7 +84,7 @@ const translations = {
 		WindowsVoiceAssistant: "Windows Voice Assistant",
 
 		TerraformProject: "Terraform Project",
-		TerraformProjectDescription: "AWS infrastructure with Terraform.",
+		TerraformProjectDescription: "AWS infrastructure managed with Terraform.",
 
 		AnsibleProject: "Ansible Project",
 
