@@ -37,7 +37,7 @@ const translations = {
 		AnsibleProject: "Projekt Ansible",
 
 		AnsibleProjectDescription:
-			"Konfiguracja i automatyzacja instancji AWS EC2 przy użyciu Ansible.",
+			"Automatyzacja konfiguracji instancji AWS EC2 za pomocą Ansible.",
 
 		// AUTO-GENERATED PL TRANSLATIONS
 
@@ -89,7 +89,7 @@ const translations = {
 		AnsibleProject: "Ansible Project",
 
 		AnsibleProjectDescription:
-			"Configuration and automation of AWS EC2 instances using Ansible.",
+			"Automated configuration of AWS EC2 instances with Ansible.",
 
 		// AUTO-GENERATED ENG TRANSLATIONS
 
