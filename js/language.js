@@ -25,7 +25,7 @@ const translations = {
 		Projects: "Projekty",
 		TechnologiesUsed: "Wykorzystane technologie:",
 
-		AWSPortfolioWebsite: "Strona portfolio AWS",
+		AwsPortfolioWebsite: "Strona portfolio AWS",
 		AWSPortfolioDescription: "Statyczna strona portfolio AWS wdrożona na S3.",
 
 		WindowsVoiceAssistant: "Asystent głosowy dla systemu Windows",
@@ -78,7 +78,7 @@ const translations = {
 		Projects: "Projects",
 		TechnologiesUsed: "Technologies used:",
 
-		AWSPortfolioWebsite: "AWS Portfolio Website",
+		AwsPortfolioWebsite: "AWS Portfolio Website",
 		AWSPortfolioDescription: "Static AWS portfolio website deployed on S3.",
 
 		WindowsVoiceAssistant: "Windows Voice Assistant",
